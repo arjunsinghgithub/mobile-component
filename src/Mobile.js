@@ -4,7 +4,7 @@ function Phone (props){
         <>
             <div id="container">
                 <div id="image">
-                    <img src={props.src} alt= {props.alt} height="200px" width="160px" alt="mobile-picture"/>
+                    <img src={props.src} alt= {props.alt} height="200px" width="160px"/>
                 </div>
                 <div id="details">
                     <h1>{props.name}</h1>
