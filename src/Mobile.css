@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#image, #details, #price-section{
+    padding: 0px 10px;
+}
+
+#image{
+  width:250px;
+}
+
+#details{
+    margin-right: auto;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: 10px auto;
+    padding:10px;
+    border: 3px solid rgb(136 159 159 /0.2);
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(
+    circle at top,
+    #e6fffa 0%,
+    #c7f0e8 35%,
+    #9fe3d8 65%,
+    #6ccfc1 100%
+     );
+    transition: transform 400ms ease,box-shadow 400ms ease ;
+}
+
+/* Hover effect */
+#container:hover {
+  transform: scale(1.01);
+  box-shadow:
+    0 20px 40px rgba(16, 185, 185, 0.25),
+    0 8px 20px rgba(16, 185, 185, 0.15);
+}
+
+#details h1{
+    padding: 10px 0px;
+    font-size: 24px;
+}
+
+img,ul,span,h1{
+    cursor:pointer;
+}
+
+
+#price {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#price-section div{
+    width:auto;
+    padding:10px 10px 0px 0px;
+    white-space: normal;
+}
+
+#image img{
+    border-radius: 17px;
+}
+
+/* styling list */
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.2em;
+  padding-top: 5px;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgb(53, 50, 30); /* optional */
+}
+
+/*styling anchor tag*/
+a {
+  text-decoration: none;     /* removes underline */
+  color: #000000;            /* teal */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #11b35d;
+}
+
+a:visited {
+  color: #115e59;
+}
+
